@@ -10,7 +10,6 @@ body {
     flex-direction: column;
     max-width: 1650px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    min-width: 500px;
     font-size: 18px;
 }
 
@@ -43,6 +42,10 @@ br {
     border: solid white;
     border-width: 1px;    
     margin: 3px;
+}
+
+.topbar-info {
+    display:flex;
 }
 
 .header-title{
@@ -120,6 +123,7 @@ br {
     margin-top: 20px;
     font-weight: normal;
     color: black;
+    margin-right: 5px;
 }
 
 .reference {
@@ -175,6 +179,62 @@ input {
     height:30px;
     width: 200px;
     font-size: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+    body {
+        padding: 0px;
+        width:100%;
+        font-size: 20px;
+    }
+
+    .topbar {
+        margin: 0px;
+        display: inline-flex;
+    }
+
+    .topbar-info {
+        display: block;
+        margin: 0px;
+        padding-left: 10px;
+        margin-top: 5px;
+    }
+
+    .header-title {
+        font-size: 22px;
+        padding: 0px;
+    }
+
+    
+
+    .navbar {
+       font-size: 18px; 
+       padding-left: 1px;
+       margin-bottom: 5px;
+    }
+
+    .navigation {
+        margin: 0px;
+    }
+
+    .login {
+        font-size: 18px;
+    }
+
+
+    .endbar {
+        width: 100%;
+    }
+
+    .search {
+        display: flex;
+        width: inherit;
+        justify-content: stretch;
+    }
+
+    input {
+        width:100%;
+    }
 }
 
 
